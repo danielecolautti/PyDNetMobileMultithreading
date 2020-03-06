@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PydnetTFLite</string>
+    <string name="image_view_content">PydnetResult</string>
+
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
