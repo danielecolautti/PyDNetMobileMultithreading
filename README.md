@@ -6,9 +6,13 @@ Tutte le variabili che modificano il comportamento dell'applicazione sono in Mai
 
 ### 1. CPU/GPU
 
+_public static boolean GPU;_
+
 Impostare la variabile GPU uguale a false per far eseguire l'inferenza sulla CPU oppure a true per eseguirla sulla GPU.
 
 ### 2. Frame Concorrenti
+
+_private int frameConcorrenti;_
 
 Indica il numero massimo di elaborazioni concorrenti.
 
@@ -21,7 +25,11 @@ visualizzazione.
 
 ### 3. Campionamento
 
+_private boolean enableInferenceFrequency;_
+
+_private long inferenceFrequency;_
+
 Settare la variabile enableInferenceFrequency a false per elaborare ogni frame disponibile oppure a true per prendere un frame
-ogni inferenceFrequency ms (scartando gli altri). Nel secondo caso il valore inferenceFrequency viene ricalcolato 
+ogni inferenceFrequency millisecondi (scartando gli altri). Nel secondo caso il valore inferenceFrequency viene ricalcolato 
 dinamicamente basandosi sul tempo medio di inferenza. In entrambi i casi il frame viene processato solo se non ci sono già 
 troppi thread (=frameConcorrenti) che eseguono inferenze in esecuzione.
