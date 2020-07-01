@@ -1,4 +1,4 @@
-# PydnetTFLite_plus
+# PyDNet Mobile Multithreading
 
 ## Configurazioni per il testing
 
